@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugasan: Halaman</title>
+    <style>
+       .box {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        .box .header {
+            display: flex; 
+            flex-direction: row; 
+            justify-content: space-between; 
+            background-color: black; 
+            font-size: 16px; 
+            color: white; 
+            border-radius: 10px;
+            align-items: center;
+            margin-top: 15px;
+            margin-right: 150px;
+            margin-left: 150px;
+            padding-top: 25px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .box .header .header-logo {
+            display: flex;
+            flex-direction: row; 
+            justify-content: flex-start;
+            margin-right: 50px;
+        }
+
+        .box .header .header-books-aboutus {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 26px;
+        }
+        .box .header .header-books-aboutus a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .box .header .header-search-checkout {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 26px;
+            margin-left: 30px;
+        }
+
+        .box .header .login{
+            background-color: #F4CE47;
+            color: black;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 10px;
+            align-items: center;
+            margin-top: 0px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .box .banner div img {
+            width: 1700px;
+        }
+
+        .box .body {
+            display: flex;
+            flex-direction: column;
+            background-color: #2A2C2E;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            display: flex;
+            flex-direction: row; 
+            justify-content: center;
+        }
+
+        .box .body {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .box .body .body-nations {
+            display: flex;
+            flex-direction: column;
+            color: black;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+        }
+        .box .body .body-margarita {
+            display: flex;
+            flex-direction: column;
+            color: black;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+        }
+        .box .body .body-combatant {
+            display: flex;
+            flex-direction: column;
+            color: black;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .box .body .body-more {
+            display: flex;
+            flex-direction: column;
+            color: black;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .box .body .body-hello {
+            display: flex;
+            flex-direction: column;
+            color: black;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .box .body .body-godfather {
+            display: flex;
+            flex-direction: column;
+            color: black;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .box .body .body-names {
+            display: flex;
+            flex-direction: column;
+            color: black;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .box .body .body-sun {
+            display: flex;
+            flex-direction: column;
+            color: black;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .box .body .body-muscle {
+            display: flex;
+            flex-direction: column;
+            color: black;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .box .footer .footer-1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2A2C2E;
+            padding: 20px;
+        }
+
+        .footer .footer-1 div {
+            display: flex;
+            align-items: center;
+        }
+
+        .footer .social-icons {
+            display: flex; 
+            gap: 15px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="header">
+            <div class="header-logo">
+                <div><img src="logo.png" alt="Logo"></div>
+            </div>
+            <div class="header-books-aboutus">
+                <div><a href="#">Books</a></div>
+                <div><a href="#">Authors</a></div>
+                <div><a href="#">What to Read?</a></div>
+                <div><a href="#">Gift Ideas</a></div>
+                <div><a href="#">About Us</a></div> 
+            </div>
+            <div class="header-search-checkout">
+                <div><a href="#"><img src="icon/Search.png" alt="Search"></a></div> 
+                <div><a href="#"><img src="icon/bookmark.png" alt="Bookmark"></a></div> 
+                <div><a href="#"><img src="icon/Cart.png" alt="Cart"></a></div> 
+            </div>
+            <div class="login">
+                 <div>Login</div> 
+            </div> 
+        </div>
+
+        <div class="banner">
+            <div><img src="Banner.png" alt="Banner"></div>
+        </div>
+
+        <div class="body">
+            <div class="body-nations">
+                <div><img src="img/img1.png" alt="The Wealth of Nations"></div>
+                <div class="paragraph">
+                    <p style="height: 10px;">Adam Smith</p>
+                    <p style="font-weight: bold;">The Wealth of Nations</p>
+                </div>
+                <div style="height: 60px;"><img src="Comments.png" alt="Comments"></div>
+                <div><img src="price.png" alt="Price"></div>
+            </div>
+            <div class="body-margarita">
+                <div><img src="img/img2.png" alt="The Wealth of Nations"></div>
+                <div class="paragraph">
+                    <p style="height: 10px;">Mikhail Bulgakov</p>
+                    <p style="font-weight: bold;">Mater Margarita</p>
+                </div>
+                <div style="height: 60px;"><img src="Comments.png" alt="Comments"></div>
+                <div><img src="price.png" alt="Price"></div>
+            </div>
+            <div class="body-combatant">
+                <div><img src="img/img3.png" alt="The Wealth of Nations"></div>
+                <div class="paragraph">
+                    <p style="height: 10px;">Alex Gilvarry</p>
+                    <p style="font-weight: bold; height: 10px;">From the Memoirs of</p>
+                    <p style="font-weight: bold;">a Non-Enemy Combatant</p>
+                </div>
+                <div><img src="Comments.png" alt="Comments"></div>
+                <div><img src="price.png" alt="Price"></div>
+            </div>
+
+            <div class="body-more">
+                <div><img src="img/img4.png" alt="More Than This"></div>
+                <div class="paragraph">
+                    <p style="height: 10px;">Patrick Ness</p>
+                    <p style="font-weight: bold;">More Than This</p>
+                </div>
+                <div style="height: 70px;"><img src="Comments.png" alt="Comments"></div>
+                <div><img src="price2.png" alt="Price"></div>
+            </div>
+            <div class="body-hello">
+                <div><img src="img/img5.png" alt="Hello I am Erik"></div>
+                <div class="paragraph">
+                    <p style="height: 10px;">Erik Splekermann</p>
+                    <p style="font-weight: bold;">Hello I am Erik</p>
+                </div>
+                <div style="height: 70px;"><img src="Comments.png" alt="Comments"></div>
+                <div><img src="price2.png" alt="Price"></div>
+            </div>
+            <div class="body-godfather">
+                <div><img src="img/img6.png" alt="The Godfather "></div>
+                <div class="paragraph">
+                    <p style="height: 10px;">Mario Puzo</p>
+                    <p style="font-weight: bold;">The Godfather</p>
+                </div>
+                <div style="height: 60px;"><img src="Comments.png" alt="Comments"></div>
+                <div><img src="price.png" alt="Price"></div>
+            </div>
+
+            <div class="body-names">
+                <div><img src="img/img7.png" alt="The Names"></div>
+                <div class="paragraph">
+                    <p style="height: 10px;">Don Delillo</p>
+                    <p style="font-weight: bold;">The Names</p>
+                </div>
+                <div style="height: 70px;"><img src="Comments.png" alt="Comments"></div>
+                <div><img src="price2.png" alt="Price"></div>
+            </div>
+            <div class="body-sun">
+                <div><img src="img/img8.png" alt="She Beyond Sun"></div>
+                <div class="paragraph">
+                    <p style="height: 10px;">Daniel Gargailo</p>
+                    <p style="font-weight: bold;">She Beyond Sun</p>
+                </div>
+                <div style="height: 60px;"><img src="Comments.png" alt="Comments"></div>
+                <div><img src="price.png" alt="Price"></div>
+            </div>
+            <div class="body-muscle">
+                <div><img src="img/img9.png" alt="Muscle"></div>
+                <div class="paragraph">
+                    <p style="height: 10px;">Alan Trotter</p>
+                    <p style="font-weight: bold;">Muscle</p>
+                </div>
+                <div style="height: 60px;"><img src="Comments.png" alt="Comments"></div>
+                <div><img src="price3.png" alt="Price"></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-1">
+                <div><img src="logo.png" alt="Logo"></div>
+                <div class="social-icons">
+                    <div><a href="https://www.instagram.com/"><img src="logo/ig.png" alt="IG"></a></div>
+                    <div><a href="https://www.facebook.com/"><img src="logo/fb.png" alt="FB"></a></div>
+                    <div><a href="https://www.twitter.com/"><img src="logo/twitter.png" alt="Twitter"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
