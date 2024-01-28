@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muscle</title>
+    <style>
+        .box {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .box .header {
+            display: flex; 
+            flex-direction: row; 
+            justify-content: space-between; 
+            background-color: black; 
+            font-size: 16px; 
+            color: white; 
+            border-radius: 10px;
+            align-items: center;
+            margin-top: 15px;
+            margin-right: 150px;
+            margin-left: 150px;
+            padding-top: 25px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .box .header .header-logo {
+            display: flex;
+            flex-direction: row; 
+            justify-content: flex-start;
+            margin-right: 50px;
+        }
+
+        .box .header .header-books-aboutus {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 26px;
+        }
+        .box .header .header-books-aboutus a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .box .header .header-search-checkout {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 26px;
+            margin-left: 30px;
+        }
+
+        .box .header .login{
+            background-color: #F4CE47;
+            color: black;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 10px;
+            align-items: center;
+            margin-top: 0px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .box .banner div img {
+            width: 1700px;
+        }
+
+        .box .body-1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2A2C2E;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .box .body-1 .muscle {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .box .body-1 .muscle img {
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        .box .body-1 .muscle .content-1 {
+            margin-top: 10px;
+        }
+
+        .box .body-1 .muscle .content-1 img {
+            margin-top: 5px;
+            margin-left: -5px;
+            margin-bottom: 5px;
+        }
+
+        .box .body-1 .muscle .content-1 dt {
+            float: left;
+            width: 100px;
+        }
+
+        .box .body-1 .muscle .content-1 dd {
+            margin: 0 0 0 110px;
+            padding: 0 0 10px 0;
+        }
+
+        .box .body-1 .muscle .content-1 .button-container {
+            margin-top: 10px;
+            margin-left: -10px;
+            margin-bottom: 20px;
+        }
+
+        .box .body-1 .muscle .content-1 .button-container button {
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 15px; /* Rounded corners for the buttons */
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .box .body-1 .muscle .content-1 .button-container .buy-now {
+            background: linear-gradient(to right, #FFA500, #FFD700); /* Orange to gold gradient */
+            color: black;
+        }
+
+        .box .body-1 .muscle .content-1 .button-container .add-to-bag {
+            background: linear-gradient(to right, #FFD700, #FFA500); /* Gold to orange gradient */
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="header">
+            <div class="header-logo">
+                <div><img src="logo.png" alt="Logo"></div>
+            </div>
+            <div class="header-books-aboutus">
+                <div><a href="#">Books</a></div>
+                <div><a href="#">Authors</a></div>
+                <div><a href="#">What to Read?</a></div>
+                <div><a href="#">Gift Ideas</a></div>
+                <div><a href="#">About Us</a></div> 
+            </div>
+            <div class="header-search-checkout">
+                <div><a href="#"><img src="icon/Search.png" alt="Search"></a></div> 
+                <div><a href="#"><img src="icon/bookmark.png" alt="Bookmark"></a></div> 
+                <div><a href="#"><img src="icon/Cart.png" alt="Cart"></a></div> 
+            </div>
+            <div class="login">
+                 <div>Login</div> 
+            </div> 
+        </div>
+
+        <div class="banner">
+            <div><img src="Banner.png" alt="Banner"></div>
+        </div>
+
+        <div class="body-1">
+            <div class="muscle">
+                <img src="img/img9.png" alt="Muscle">
+                <div class="content-1">
+                    <p>Alan Trotter</p>
+                    <h1 style="color: white; padding: 0px;">MUSCLE</h1>
+                    <img src="rating.png" alt="Rating">
+                    <dl style="padding: -5px; margin-bottom: 5px;">
+                        <dt>Category</dt>
+                        <dd>Novel</dd>
+                        
+                        <dt>Publish date</dt>
+                        <dd>May 2007</dd>
+                        
+                        <dt>Language</dt>
+                        <dd>English</dd>
+                        
+                        <dt>Pages</dt>
+                        <dd>208</dd>
+                        
+                        <dt>Read time</dt>
+                        <dd>4-6 hours</dd>
+                        
+                        <dt>Type</dt>
+                        <dd>Hardcover</dd>
+                      </dl>
+                      <img src="price4.png" alt="Price">
+                      <div class="button-container">
+                        <button class="buy-now">BUY NOW</button>
+                        <button class="add-to-bag">ADD TO BAG</button>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
